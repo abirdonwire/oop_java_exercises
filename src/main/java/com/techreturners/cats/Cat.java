@@ -42,4 +42,5 @@ public boolean wakeUp() {
 public boolean isSleeping() {
     return this.isSleeping;
 }
-}
+}/* When each subclass (Lion, Cheetah, Domestic Cat) is extended from this parent class, it will inherit state and behaviour. Which
+can be changed using each access modifier.*/
