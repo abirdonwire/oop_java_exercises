@@ -4,6 +4,9 @@ public interface makeAnimal {
     String eat();
     String getSetting();
     int getAverageHeight();
+    boolean goToSleep();
+    boolean wakeUp();
+    boolean isAsleep();
 }
 
 /*The makeAnimal interface specifies the methods (behaviour) of all animals, including cats. 
