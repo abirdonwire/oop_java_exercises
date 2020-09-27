@@ -10,17 +10,16 @@ boolean isAsleep();
 }
 
 
-
-public abstract class Cat implements Animal {
-    private boolean isSleeping = false;
+public abstract class AbstractCat implements Cat {
+    private boolean isAsleepNow = false;
     private String food;
     private String setting;
     private int averageHeight;
 } 
 
-public Cat() {}
+public AbstractCat() {}
 
-public Cat(String food, String setting, int averageHeight) {
+public AbstractCat(String food, String setting, int averageHeight) {
     this.food = food;
     this.setting = setting;
     this.averageHeight = averageHeight;
