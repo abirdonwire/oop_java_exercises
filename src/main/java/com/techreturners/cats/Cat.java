@@ -14,6 +14,11 @@ public abstract class Cat implements Animal {
         this.averageHeight = averageHeight;
     }
 
+    public String eat() {
+        return this.food;
+    }
+
 
     
+
 }
