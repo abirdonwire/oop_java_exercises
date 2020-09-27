@@ -19,6 +19,15 @@ public abstract class Cat implements Animal {
     }
 
 
+    public String getSetting() {
+        return this.setting;
+    }
+
+    public int getAverageHeight() {
+        return this.averageHeight;
+    }
+
+
     
 
 }
