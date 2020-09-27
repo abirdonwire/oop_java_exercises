@@ -1,17 +1,24 @@
 package com.techreturners.cats;
 
-public abstract class Cat implements makeAnimal {
+public interface Cat {
+String eat();
+String getSetting();
+int getAverageHeight();
+boolean goToSleep();
+boolean wakeUp();
+boolean isAsleep();
+}
+
+
+
+public abstract class Cat implements Animal {
     private boolean isSleeping = false;
     private String food;
     private String setting;
     private int averageHeight;
-} /* The abstract class Cat is showing only the essential details, the related classes (Lion, Cheetah, Domestic Cat)
-will all share these lines of code, and this abstract class will be extended by the related classes. The methods allow us to access
-and modify the state of the Object to which they belong. */
+} 
 
-public Cat() {
-
-}
+public Cat() {}
 
 public Cat(String food, String setting, int averageHeight) {
     this.food = food;
@@ -24,7 +31,7 @@ public String eat() {
 }
 
 public String getSetting() {
-    return this.setting; /* Each get method returns the private variables, this is encapsulating all the state data of the Cat object */
+    return this.setting; 
 }
 
 public int getAverageHeight() {
@@ -32,7 +39,7 @@ public int getAverageHeight() {
 }
 
 public boolean goToSleep() {
-    return this.isSleeping = true; /* Each set method is setting the value of the private variables*/
+    return this.isSleeping = true; 
 }
 
 public boolean wakeUp() {
@@ -42,5 +49,4 @@ public boolean wakeUp() {
 public boolean isSleeping() {
     return this.isSleeping;
 }
-}/* When each subclass (Lion, Cheetah, Domestic Cat) is extended from this parent class, it will inherit state and behaviour. Which
-can be changed using each access modifier.*/
+}
