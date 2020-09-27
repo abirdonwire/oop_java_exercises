@@ -36,6 +36,8 @@ public abstract class Cat implements Animal {
         return this.isAsleepNow = false;
     }
 
-    
+    public boolean isAsleep() {
+        return this.isAsleepNow;
+    }
 
 }
