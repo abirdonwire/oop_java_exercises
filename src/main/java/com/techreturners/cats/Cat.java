@@ -28,6 +28,14 @@ public abstract class Cat implements Animal {
     }
 
 
+    public boolean goToSleep() {
+        return this.isAsleepNow = true;
+    }
+
+    public boolean wakeUp() {
+        return this.isAsleepNow = false;
+    }
+
     
 
 }
