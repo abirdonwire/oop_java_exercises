@@ -1,7 +1,7 @@
 package com.techreturners.cats;
 
-public class Lion extends Cat {
-    public Lion() {
+public class LionCat extends Cat {
+    public LionCat() {
         super("Roar!!!!", "wild", 1100);
     }
 }
