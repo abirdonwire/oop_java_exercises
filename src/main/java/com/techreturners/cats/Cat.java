@@ -42,10 +42,10 @@ public boolean goToSleep() {
 }
 
 public boolean wakeUp() {
-    return this.isSleeping = false;
+    return this.isAleepNow = false;
 }
 
 public boolean isSleeping() {
-    return this.isSleeping;
+    return this.isAleepNow;
 }
 }
