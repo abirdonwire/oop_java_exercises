@@ -6,5 +6,14 @@ public abstract class Cat implements Animal {
     private String setting;
     private int averageHeight;
 
+    public Cat() {}
+
+    public Cat(String food, String setting, int averageHeight) {
+        this.food = food;
+        this.setting = setting;
+        this.averageHeight = averageHeight;
+    }
+
+
     
 }
